@@ -1,0 +1,132 @@
+h1 {
+  font-size: 2.4em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.0em; }
+
+h5 {
+  font-size: 0.8em; }
+
+h6 {
+  font-size: 0.6em; }
+
+.inputField {
+  border: none;
+  outline: none; }
+
+.horizontalList {
+  padding: 0px; }
+  .horizontalList li {
+    list-style: none; }
+
+.picture {
+  border-radius: 999em; }
+
+.singleButton1 {
+  background-color: #2196F3;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0.5em 1.2em; }
+
+button[disabled] {
+  opacity: 0.5; }
+
+.fontBold {
+  font-weight: bold; }
+
+.floatRight {
+  float: right; }
+
+.floatLeft {
+  float: left; }
+
+.width100percent {
+  width: 100%; }
+
+.noBackground {
+  background-color: transparent; }
+
+.subtitle {
+  font-weight: bold;
+  margin: 20px 0px; }
+
+.paddingBottom5px {
+  padding-bottom: 5px; }
+
+.displayNone {
+  display: none; }
+
+body {
+  font-family: "Arial";
+  box-sizing: padding-box; }
+
+#questions {
+  background-color: #fafafa;
+  border: 1px solid #e4e4e4; }
+  #questions #stepsContainer {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 2em; }
+    #questions #stepsContainer #stepLine {
+      height: 2em;
+      margin-bottom: 0px;
+      overflow: hidden;
+      position: relative;
+      text-align: justify;
+      z-index: 5; }
+      #questions #stepsContainer #stepLine:before {
+        content: '';
+        border: 1px solid #e4e4e4;
+        margin-top: -3px;
+        position: absolute;
+        top: 1em;
+        width: 100%;
+        z-index: 0; }
+      #questions #stepsContainer #stepLine:after {
+        content: "";
+        display: inline-block;
+        width: 100%; }
+      #questions #stepsContainer #stepLine li {
+        background-color: #000000;
+        border-radius: 2em;
+        color: white;
+        display: inline-block;
+        font-size: 0.8em;
+        height: 2em;
+        line-height: 2em;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        width: 2em; }
+        #questions #stepsContainer #stepLine li.active {
+          background-color: #2196F3; }
+  #questions #questionsContainer #firstStep .inputField {
+    border-bottom: 1px solid #e4e4e4; }
+  #questions #questionsContainer .containerStep {
+    margin: 30px 0; }
+  #questions #buttonContainer {
+    border-top: 1px solid #e4e4e4;
+    padding: 2em; }
+
+@media (max-width: 991px) {
+  #questions #firstStep .inputField {
+    margin: 10px 0px; } }
+@media (min-width: 992px) {
+  #questions {
+    margin: 30px auto 0;
+    width: 960px; }
+    #questions #questionsContainer {
+      padding: 30px 0px; }
+      #questions #questionsContainer .containerStep .inputField {
+        margin: 20px 0px; } }
+button {
+  border: none; }
+  button[attr="disabled"] {
+    opacity: 0.5; }
+
+/*# sourceMappingURL=style.css.map */

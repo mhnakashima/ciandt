@@ -1,0 +1,33 @@
+{
+  "name": "ciet",
+  "version": "1.0.0",
+  "description": "I created some questions I would like to know the answers, Could you spare some time to answer them? I'll be very happy with that.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhnakashima/ciet.git"
+  },
+  "keywords": [
+    "ciet",
+    "angular",
+    "html5",
+    "css"
+  ],
+  "author": "michael nakashima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhnakashima/ciet/issues"
+  },
+  "homepage": "https://github.com/mhnakashima/ciet#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

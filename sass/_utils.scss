@@ -1,0 +1,92 @@
+@import '_variables';
+
+//elements
+h1{
+	font-size: 2.4em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+h3{
+	font-size: 1.6em;
+}
+
+h4{
+	font-size: 1.0em;
+}
+
+h5{
+	font-size: 0.8em;
+}
+
+h6{
+	font-size: 0.6em;
+}
+
+.inputField{
+	border: none;
+	outline: none;
+}
+
+.horizontalList{
+	padding: 0px;
+
+	li{
+		list-style: none;
+	}
+}
+
+.picture{
+	border-radius: 999em;
+}
+
+.singleButton1{
+	background-color: $buttonColor;
+	border-radius: 3px;
+	color: $buttonColorText;
+	padding: 0.5em 1.2em;
+}
+
+button[disabled]{
+	opacity: 0.5;
+}
+
+//fonts
+.fontBold{
+	font-weight: bold;
+}
+
+//floats
+.floatRight{
+	float: right;
+}
+
+.floatLeft{
+	float: left;
+}
+
+//width
+.width100percent{
+	width: 100%;
+}
+
+//misc
+.noBackground{
+	background-color: transparent;
+}
+
+.subtitle{
+	font-weight: bold;
+	margin: 20px 0px;	
+}
+
+.paddingBottom5px{
+	padding-bottom: 5px;
+}
+
+
+.displayNone{
+	display: none;
+}

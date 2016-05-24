@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="questions">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Angular - Test - Michael Nakashima</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="questions" class="" ng-controller="QuestionsCtrl">
+		
+		<header id="stepsContainer" class="clearfix">
+			
+			<ul id="stepLine" class="horizontalList">
+				<li id="step1" class="step" ng-class="{active: step == 0}">1</li>
+				<li id="step2" class="step" ng-class="{active: step == 1}">2</li>
+				<li id="step3" class="step" ng-class="{active: step == 2}">3</li>
+			</ul>
+			
+		</header>
+
+		<form id="QuestionsForm" name="" action="#" novalidate>
+			
+			<div id="questionsContainer" class="container-fluid">
+				
+				<questions-about ng-init="setFormItem(this);" ng-form="aboutForm" id="firstStep" class="containerStep clearfix" ng-show="step==0" >
+										
+				</questions-about>
+
+				<questions-food ng-init="setFormItem(this);" ng-form="foodForm" id="secondStep" class="containerStep clearfix" ng-show="step==1">
+					  
+				</questions-food>
+
+				<questions-review ng-init="setFormItem(this);" id="thirdStep" class="containerStep clearfix" ng-show="step==2">
+					
+				</questions-review>
+
+			</div>
+
+		</form>
+
+		<footer id="buttonContainer" class="clearfix">
+			
+			<button href="#" id="back"   class="floatLeft  singleButton1" ng-disabled="step == 0" ng-click="previousStep();">Back</button>
+
+			<button href="#" id="next"   class="floatRight singleButton1" ng-disabled="" ng-click="nextStep();">Next</button>
+			{{$scope.forms.length}}
+		</footer>		
+
+	</div>
+
+
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/QuestionController.js"></script>
+
+</body>
+</html>
