@@ -35,13 +35,14 @@ h6{
 
 	li{
 		list-style: none;
+		text-align: center;
 	}
 }
 
 .picture{
 	border-radius: 999em;
 }
-
+	
 .singleButton1{
 	background-color: $buttonColor;
 	border-radius: 3px;
@@ -86,7 +87,19 @@ button[disabled]{
 	padding-bottom: 5px;
 }
 
+.alignCenter{
+	text-align: center;
+}
 
 .displayNone{
 	display: none;
+}
+
+.marginTop15px{
+	margin-top: 15px;
+}
+
+
+.marginTop35px{
+	margin-top: 35px;
 }

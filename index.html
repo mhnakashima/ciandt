@@ -49,8 +49,7 @@
 			
 			<button href="#" id="back"   class="floatLeft  singleButton1" ng-disabled="step == 0" ng-click="previousStep();">Back</button>
 
-			<button href="#" id="next"   class="floatRight singleButton1" ng-disabled="" ng-click="nextStep();">Next</button>
-			{{$scope.forms.length}}
+			<button href="#" id="next"   class="floatRight singleButton1" ng-disabled="step == numOfSteps" ng-click="nextStep();">Next</button>
 		</footer>		
 
 	</div>

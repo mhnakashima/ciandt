@@ -89,6 +89,8 @@ body{
 				margin: 10px 0px;
 			}
 		}
+
+
 	}
 }
 
@@ -105,7 +107,31 @@ body{
 
 				.inputField{
 					margin: 20px 0px;
+				}
+
+				.horizontalList{
+					padding: 0px;
+
+					li{
+						list-style: none;
+						text-align: center;
+
+						input{
+							margin-top: 15px;
+						}
+					}
 				}				
+			}
+
+			#thirdStep{
+				.horizontalList{
+					padding: 0px;
+
+					li{
+						list-style: none;
+						text-align: left;
+					}
+				}	
 			}
 		}
 	}

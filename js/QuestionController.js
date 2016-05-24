@@ -4,6 +4,8 @@ app
 	.controller('QuestionsCtrl', ['$scope', function($scope){
 		
 		$scope.step = 0;
+		$scope.numOfSteps = 2; //I know it's wrong but I've trying to get the numOfSteps: #fail
+		
 		$scope.isLastStep = false;
 
 		$scope.forms = [];
@@ -15,7 +17,7 @@ app
 		$scope.nextStep = function(){
 			$scope.step++;
 
-			if($scope.step == $scope.forms.length){
+			if($scope.step == $scope.numOfSteps){
 				$scope.isLastStep = true;
 			}
 
@@ -24,7 +26,7 @@ app
 		$scope.previousStep = function(){
 			$scope.step--;
 
-			if($scope.step != $scope.forms.length){
+			if($scope.step != $scope.numOfSteps){
 				$scope.isLastStep = false;
 			}
 		}
@@ -34,8 +36,8 @@ app
 		}
 
 		$scope.getFormItem = function(){
-			return $scop.forms;
-		}	
+			return numOfSteps;
+		}			
 
 	}])
 	.directive('questionsAbout', function(){
